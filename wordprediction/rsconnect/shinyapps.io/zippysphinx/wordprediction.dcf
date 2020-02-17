@@ -1,0 +1,12 @@
+name: wordprediction
+title: wordprediction
+username:
+account: zippysphinx
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1085553
+bundleId: 2318874
+url: https://zippysphinx.shinyapps.io/wordprediction/
+when: 1565791519.9978
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h1>Documentation</h1>
+
+<p><b>This WebApp is made with the help of shiny package from rstudio.</b></p>
+<p><b>Reference for building ngram model and prediction model</b> is taken from the website : <b>"https://www.tidytextmining.com"</b> and some <b>online documentations on "tm package".</b></p>
+<p>In this app User inputs word or words and the next word is predicted according to mostly used phrases.</p>
+<p>Data is provided by coursera and contains data from multiple languages and from multiple sources. We only use English data from "Blogs", "News", and "Twitter".
+</p>
+<p>First we clean data, in this step we are converting all the letters to lower case and removing punctuations, numbers and stopwords. Then we will strip white spaces and create a corpus.
+The Corpus is a collection of written texts, especially the entire works of a particular author or a body of writing on a particular subject. In this corpus is made from the sample of the data from sources. We are using samaple to save computer resources.
+</p>
+<p>After cleaning of data the ngram models are made to explore data. We made <b>Unigram, Bigram, Trigram, Quadgram models.</b> This is basically making tokens of words by combining words i,e. one word into one token, two words into one token and so on.
+We will only make upto Quadgrams as making token of five is useless as no one uses phrases that long.
+</p>
+<p>For prediction we made functions for <b>bigrams, trigrams, quadgrams and ngrams.</b></p>
+<p>Function "ngrams" take user input and split the words. Then it analyze the no. of words and determine whether it is bigram, trigram or quadgram.
+It then passes the words to the functions bigram, trigram or quadgram according to input.
+</p>
+<p>Functions bigrams, trigrams and quadgrams takes input passed from ngrams function and the first words as input and then chooses the multiple words associated with the word, if it is trigram the function then analyze the second word and find the mostly used words with the previous word.
+</p>
+<p>All this predictions are made after we made the data frames from the ngram models.</p>
+<p>
+<b>In this Shiny Application, we are using shinythemes package to create a ui better than the normal.</b></p>
+<p>With the use of this package,  user can create a themed application and also provides options for user to change theme according to them.</p>
+<p><b>Exploratory Tab :</b> It contains the analysis of the sample of the original data with most frequent words and least frequent words used with R Code.</p>
+
+<p> <b>Some Plots of the NGram Models are :</b> </p>
+
+<img src="plot1.png">
+
+<img src="plot2.png">
+
+<img src="plot3.png">
+
+<img src="plot4.png">
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
